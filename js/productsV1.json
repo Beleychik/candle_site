@@ -1,0 +1,50 @@
+[
+    {
+        "id": "01",
+        "title": "Милый дом",
+        "dataDescription": "./tovar1/tovar1.html",
+        "dataPrice1": 210,
+        "dataPrice2": 310,
+        "imgSrc": "./images/standart_candle.jpg"
+    },
+    {
+        "id": "02",
+        "title": "Вино и розовая малина",
+        "dataDescription": "./tovar2/tovar2.html",
+        "dataPrice1": 210,
+        "dataPrice2": 310,
+        "imgSrc": "./images/prosecco_and_pink_raspberries.jpg"
+    },
+    {
+        "id": "03",
+        "title": "Мед и виски",
+        "dataDescription": "./tovar3/tovar3.html",
+        "dataPrice1": 210,
+        "dataPrice2": 310,
+        "imgSrc": "./images/standart_candle.jpg"
+    },
+    {
+        "id": "04",
+        "title": "Кленовый чай и сладкий крем",
+        "dataDescription": "./tovar4/tovar4.html",
+        "dataPrice1": 210,
+        "dataPrice2": 310,
+        "imgSrc": "./images/standart_candle.jpg"
+    },
+    {
+        "id": "05",
+        "title": "Утро в Нью-Йорке",
+        "dataDescription": "./tovar5/tovar5.html",
+        "dataPrice1": 210,
+        "dataPrice2": 310,
+        "imgSrc": "./images/standart_candle.jpg"
+    },
+    {
+        "id": "06",
+        "title": "Любовное заклинание",
+        "dataDescription": "./tovar6/tovar6.html",
+        "dataPrice1": 210,
+        "dataPrice2": 310,
+        "imgSrc": "./images/love_spell.jpg"
+    }
+]
