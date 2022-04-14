@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Утро в Нью-Йорке - Candle your wishes </title>
+    <link rel="stylesheet" href="../tovar5/tovar5.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../reset.css">
+    <meta name = "viewport" content = "width=device-width">
+</head>
+<body>
+    <noscript>
+        <div class="noscript_background">
+            <p class="error"><b>Javascript отключен!</b> Чтобы перейти к сайту, <a href="https://support.google.com/adsense/answer/12654?hl=ru" style="color: blue;">включите javascript</a> и обновите страницу. Спасибо! </div>
+        <style>
+            .noscript_background {
+                width: 100%;
+                min-height: 100vh;
+                background-color: white;
+                position: fixed;
+                z-index: 4;
+                opacity: .95;
+            }
+
+            .error {
+                text-align: center;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: 0 auto;
+                font-size: 25px;
+                font-family: 'Roboto', Arial, sans-serif;
+                color: black;
+                padding: 70px;
+            }
+
+            html {
+                overflow: hidden;
+            }
+
+            body {
+                overflow: hidden;
+            }
+        </style>
+    </noscript>
+
+    <main class="all_content">
+        <div class="panel">
+            <a href="#" id="more" class="hidden">← Вернуться</a>
+        </div>
+        <div class="tovar_description_block">
+            <div class="photo_tovar"></div>
+            <div class="tovar_description">
+                <div class="name_tov">Утро в Нью-Йорке</div>
+                <div class="price_tov">от 210 до 310 грн.</div>
+                <div class="composition">
+                    <div class="title">Состав:</div>
+                    <div class="text1"><b>Верхние ноты:</b> лесной орех </div>
+                    <div class="text2"><b>Сердце аромата:</b> кокос, кофе </div>
+                    <div class="text3"><b>База:</b> клён, сливки, ваниль </div>
+                    <div class="price_title">Ценa:</div>
+                    <div class="volume100_price"><b>100 мл</b> - 210 грн</div>
+                    <div class="volume200_price"><b>200 мл</b> - 310 грн</div>
+
+                </div>
+                <div class="button">
+                    <a href="../zakaz/zakaz.html" class="in_button">заказать</a>
+                </div>
+            </div>
+        </div>
+<!--
+        <div class="footer_bottom">
+                <div class="copyright_block">
+                    <div class="logo_copyright"></div>
+                    <div class="copyright_text">
+                        <div class="copyright cop_text1">© 2021-2022 Candle your wishes - интернет магазин для продажи аромасвечей </div>
+                        <div class="copyright cop_text2">Копирование материалов без согласия запрещено! </div>
+                    </div>
+                </div>
+                <div class="social_network_block"></div>
+        </div>
+-->
+    </main>
+
+    <script>
+        //НАЗАД ВЕРНУТЬСЯ
+        window.addEventListener("load", function() {
+            let elem = document.querySelector('#more');
+            if (window.history.length >= 2) {
+                elem.addEventListener('click', () => {
+                    history.back();
+                })
+
+                elem.classList.remove("hidden");
+            }
+        });
+    </script>
+</body>
+</html>

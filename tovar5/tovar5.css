@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('../MyriadPro-Regular.eot');
+    src: url('../MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../MyriadPro-Regular.woff') format('woff'),
+    url('../MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-------ПАНЕЛЬ--------*/
+.panel{
+    width: 100%;
+    height: 50px;
+}
+
+#more{
+    color: black;
+    opacity: .8;
+    font-size: 12px;
+    line-height: 1.55;
+    font-weight: 400;
+    font-family: 'Roboto',Arial,sans-serif;
+    text-decoration: none;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none!important;
+}
+/*-------ТОВАР ОПИСАНИЕ--------*/
+.tovar_description_block{
+/*    position: absolute;*/
+    width: 930px;
+    height: 560px;
+    /* margin-top: 30px;
+    margin-left: 450px; */
+    left: 0;
+    right: 0;
+    margin: 30px auto;
+}
+
+.photo_tovar{
+    float: left;
+    width: 560px;
+    height: 560px;
+    background-image: url(../images/standart_candle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tovar_description{
+    float: left;
+    width: 350px;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.name_tov{
+    font-size: 24px;
+    line-height: 1.35;
+    font-family: 'Roboto',Arial,sans-serif;
+    color: black;
+    font-weight: 700;
+}
+
+.price_tov{
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.35;
+    font-family: 'Roboto',Arial,sans-serif;
+    color: black;
+}
+
+.composition{
+    margin-top: 20px;
+    width: 90%;
+    padding: 0px 10px 15px 0px;
+    background-color: lightblue;
+    border: 3px black solid;
+}
+
+.title {
+    font-family: 'Roboto',Arial,sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.35;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text1,
+.text2,
+.text3 {
+    font-family: 'Roboto',Arial,sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.price_title{
+    font-family: 'Roboto', Arial, sans-serif;
+font-size: 16px;
+line-height: 1.35;
+margin-top: 20px;
+font-weight: 900;
+text-align: center;
+}
+
+.volume100_price,
+.volume200_price{
+    font-family: 'Roboto', Arial, sans-serif;
+font-size: 16px;
+line-height: 1.35;
+margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    margin-top: 30px;
+    width: 120px;
+    height: 45px;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.in_button{
+    font-family: 'Roboto',Arial,sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 45px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+/*-----МЕДИА ЗАПРОСЫ-----*/
+@media (max-width: 950px){
+    .tovar_description_block{
+        width: 560px;
+        height: 1100px;
+        padding-top: 30px !important;
+    }
+    .tovar_description{
+        margin-left: 0px!important;
+        width: 100% !important;
+        margin-top: 10px;
+        height: 472px !important;
+    }
+    .composition{
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px){
+    .photo_tovar{
+        width: 100%;
+        height: 400px;
+    }
+    .tovar_description_block{
+        width: 400px;
+        height: 920px !important;
+    }
+}
+
+@media (max-width: 455px){
+    .photo_tovar{
+        width: 100%;
+        height: 250px;
+    }
+
+    .tovar_description_block{
+        width: 250px;
+        height: 830px !important;
+    }
+    
+    .tovar_description{
+        height: 530px !important;
+    }
+}
+
+
+@media (max-width: 303px){
+    .tovar_description_block{
+        padding: 0!important;
+    }
+}
