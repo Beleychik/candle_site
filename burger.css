@@ -1,0 +1,125 @@
+#burger_menu__toggle {
+  display: none;
+}
+
+#burger_menu__toggle:checked~.burger_menu__btn>span {
+  transform: rotate(45deg);
+}
+
+#burger_menu__toggle:checked~.burger_menu__btn>span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#burger_menu__toggle:checked~.burger_menu__btn>span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#burger_menu__toggle:checked~.burger_menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.burger_menu__btn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.burger_menu__btn>span,
+.burger_menu__btn>span::before,
+.burger_menu__btn>span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2.5px;
+  background-color: black;
+  transition-duration: .25s;
+}
+
+.burger_menu__btn>span::before {
+  content: '';
+  top: -8px;
+}
+
+.burger_menu__btn>span::after {
+  content: '';
+  top: 8px;
+}
+
+.burger_menu__box {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  background-color: #eceff1e9;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+
+  overflow: auto;
+}
+
+.burger_menu__item {
+  display: block;
+  margin: 12px 24px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+  position: relative;
+}
+
+.burger_menu__item:hover {
+  cursor: pointer;
+}
+
+.burger_menu__item:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  left: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition: .3s;
+}
+
+.burger_menu__item:hover:before {
+  transform: scale(1);
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .menu__item {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
+
+@media (max-height: 220px) {
+  .burger_menu__box {
+    overflow: scroll;
+  }
+}
